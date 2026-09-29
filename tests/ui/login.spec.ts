@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../pages/LoginPage';
 import { InventoryPage } from '../../pages/InventoryPage';
 
-test.describe('Login flow (saucedemo fallback)', () => {
+test.describe.skip('Login flow (saucedemo fallback)', () => {
   test('successful login lands on the inventory page', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);

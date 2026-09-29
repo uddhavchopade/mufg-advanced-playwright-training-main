@@ -26,7 +26,7 @@ export default defineConfig({
   ],
 
   // globalSetup: require.resolve('./global-setup'),  // <-- Lab 3 adds this
-
+globalSetup: require.resolve('./global-setup'),
   use: {
     baseURL: 'https://the-internet.herokuapp.com',
     trace: 'on-first-retry',
