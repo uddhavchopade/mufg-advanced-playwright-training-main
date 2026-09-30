@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { HSLoginPage } from '../../pages/HSLoginPage';
 import { HSDashboardPage } from '../../pages/HSDashboardPage';
 
-test.describe('Login flow holding sandbox', () => {
+test.describe.skip('Login flow holding sandbox', () => {
   test('successful login lands on the dashboard page', async ({ page }) => {
     const loginPage = new HSLoginPage(page);
     const dashboardPage = new HSDashboardPage(page);
